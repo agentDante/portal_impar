@@ -93,13 +93,13 @@
 				<div class="col-md-6 ">
 					<div class=" feature">
 						<div class="botaodefault material-shadow">
-							<div class="ganharbackground ">
+							<div class="consolidarbackground ">
 								<span class="fa fa-eye branco" aria-hidden="true"></span>
 								<h2 class="branco">
-									<b>Crer</b>
+									<b>Desenvolvimento Espiritual</b>
 								</h2>
 								<button type="button" class="btn btn-invisible btn-lg"
-									data-toggle="modal" data-target="#modalCelulas">Saiba
+									data-toggle="modal" data-target="#modalCursos" id="btnModalDevEspiritual">Saiba
 									mais</button>
 							</div>
 						</div>
@@ -108,13 +108,13 @@
 				<div class="col-md-6 ">
 					<div class=" feature">
 						<div class="botaodefault material-shadow">
-							<div class="consolidarbackground ">
+							<div class="enviarbackground ">
 								<span class="fa fa-shield branco" aria-hidden="true"></span>
 								<h2 class="branco">
-									<b>Forte</b>
+									<b>Formação de Liderança</b>
 								</h2>
 								<button type="button" class="btn btn-invisible btn-lg"
-									data-toggle="modal" data-target="#modalCelulas">Saiba
+									data-toggle="modal" data-target="#modalCursos" id="btnModalLideranca">Saiba
 									mais</button>
 							</div>
 						</div>
@@ -161,7 +161,32 @@
 				</div>
 			</div>
 		</div>
-
+		<!-- Modal Cursos-->
+		<div class="modal fade" id="modalCursos" tabindex="-1" role="dialog"
+					aria-labelledby="myModalHeader">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"
+							aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h3 class="modal-title" id="myModalHeader">Células</h3>
+					</div>
+					<div class="modal-body">
+						<h4><b>Nome do Curso:</b><i id="myModalNomeCurso">...</i></h4>
+						<h4><b>Requisitos:</b><i id="myModalNomeCurso">...</i></h4>
+						<h4><b>Carga Horária:</b><i id="myModalNomeCurso">...</i></h4>
+						<h4><b>Resumo:</b><i id="myModalNomeCurso">...</i></h4>
+						
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--End Modal Cursos-->
 	</section>
 
 	<!-- jQuery -->
@@ -175,7 +200,10 @@
 	<script src="js/scrolling-nav.js"></script>
 
 	<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-	<script src="js/holder.min.js"></script>
+	<!--script src="js/holder.min.js"></script-->
+
+	<!-- Array de Cursos -->
+	<script src="js/cursos.js"></script>
 
 	<script>
 		(function(i, s, o, g, r, a, m) {
@@ -228,6 +256,23 @@
 				}
 			}
 		});
+		// Get the button that opens the modal
+		var btnModalDevEspiritual = document.getElementById("btnModalDevEspiritual");
+		var btnModalLideranca = document.getElementById("btnModalLideranca");
+		// Seta os valores nas modais conforme clicado 
+		//document.getElementById("myModalHeader").innerHTML = cursos[0].nomeCurso;
+		btnModalDevEspiritual.onclick = function() {
+			document.getElementById("myModalHeader").innerHTML = cursos[0].nomeCurso;
+			//document.getElementById("modalTextBody").innerHTML = cursos[0].lastName;
+			//document.getElementById("modalFooter").innerHTML = cursos[0].age;
+			//modal.style.display = "block";
+		}
+		btnModalLideranca.onclick = function() {
+			document.getElementById("myModalHeader").innerHTML = cursos[1].nomeCurso;
+			//document.getElementById("modalTextBody").innerHTML = cursos[0].lastName;
+			//document.getElementById("modalFooter").innerHTML = cursos[0].age;
+			//modal.style.display = "block";
+		}
 	</script>
 </body>
 </html>
