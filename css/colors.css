@@ -1,0 +1,46 @@
+/*!
+ * As cores do projeto
+ */
+		 .ganharbackground{
+		     background-color: #00cc00;
+		 }
+		 .consolidarbackground{
+		     background-color: #ff9900;
+		 }
+		 .discipularbackground{
+		     background-color: #0099ff;
+		 }
+		 .enviarbackground{
+		     background-color: #E60005;
+		 }
+		 
+		 .vermelhometodista{
+			color:#E60005
+		 } 
+		 
+		 .backgroundvermelhometodista{
+			background-color:#E60005
+		 } 
+		 .backgroundcinzametodista{
+		  background-color: #b0afb5;
+		 }
+		 .backgroundcinzaclaro{
+		  background-color: #efedf5;
+		 }
+		 .backgroundcinzaescuro{
+		  background-color: #777;
+		 }
+		 
+		 .cinzametodista{
+		  color: #b0afb5;
+		 }
+		 .cinzaescuro{
+			color:#777
+		 }
+		 .preto{
+		   color: #000000;
+		 }
+		 
+		 .branco{
+			color: #ffffff;
+		 }
