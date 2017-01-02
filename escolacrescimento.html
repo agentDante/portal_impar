@@ -9,7 +9,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Escola &middot; Impar</title>
+<title>Escola &middot; Portal Impar</title>
 
 <!-- Bootstrap Core CSS -->
 <link href="css/bootstrap.css" rel="stylesheet">
@@ -71,7 +71,8 @@
 					<li class="hidden"><a class="page-scroll" href="#page-top"></a>
 					</li>
 					<li><a href="index.html">Início</a></li>
-					<li><a class="page-scroll" href="#cursos">Cursos Básicos</a></li>
+					<li><a class="page-scroll" href="#basicos">Cursos Básicos</a></li>
+					<li><a class="page-scroll" href="#intermediarios">Cursos Intermediários</a></li>
 					<li><a class="page-scroll" href="#complementares">Cursos
 							Complementares</a></li>
 				</ul>
@@ -82,19 +83,48 @@
 	</nav>
 
 	<!-- Cursos Básicos Section -->
-	<section id="cursos" class="default-section">
-		<div class="container material-shadow margin-endpage">
+	<section id="basicos" class="default-section">
+		<div class="container material-shadow">
 			<div class="row ">
 				<div class="page-header">
 					<h1 class="featurette-heading text-muted">
 						<b>Cursos</b> <small>Básicos</small>
 					</h1>
 				</div>
+				<div class="col-md-12 ">
+					<div class=" feature">
+						<div class="botaodefault material-shadow">
+							<div class="ganharbackground ">
+								<span class="fa fa-heartbeat branco" aria-hidden="true"></span>
+								<h2 class="branco">
+									<b>Novidade de Vida</b>
+								</h2>
+								<button type="button" class="btn btn-invisible btn-lg"
+									data-toggle="modal" data-target="#modalCursos" id="btnModalNovaVida">Saiba
+									mais</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END Cursos Básicos Section -->
+	
+	<!-- Cursos Intermediário Section -->
+	<section id="intermediarios" class="default-section">
+		<div class="container material-shadow">
+			<div class="row ">
+				<div class="page-header">
+					<h1 class="featurette-heading text-muted">
+						<b>Cursos</b> <small>Intermediários</small>
+					</h1>
+				</div>
 				<div class="col-md-6 ">
 					<div class=" feature">
 						<div class="botaodefault material-shadow">
 							<div class="consolidarbackground ">
-								<span class="fa fa-eye branco" aria-hidden="true"></span>
+								<span class="fa fa-fire branco" aria-hidden="true"></span>
 								<h2 class="branco">
 									<b>Desenvolvimento Espiritual</b>
 								</h2>
@@ -109,7 +139,7 @@
 					<div class=" feature">
 						<div class="botaodefault material-shadow">
 							<div class="enviarbackground ">
-								<span class="fa fa-shield branco" aria-hidden="true"></span>
+								<span class="fa fa-user-circle branco" aria-hidden="true"></span>
 								<h2 class="branco">
 									<b>Formação de Liderança</b>
 								</h2>
@@ -122,38 +152,72 @@
 				</div>
 			</div>
 		</div>
-		<div class="container material-shadow margin-endpage">
+	</section>
+		<!-- END Cursos Intermediário Section -->
+		<!-- Cursos Complementares Section -->
+	<section id="complementares" class="default-section">
+		<div class="container material-shadow">
 			<div class="row ">
 				<div class="page-header">
 					<h1 class="featurette-heading text-muted">
 						<b>Cursos</b> <small>Complementares</small>
 					</h1>
 				</div>
-				<div class="col-md-6 ">
+				<div class="col-md-3 ">
 					<div class=" feature">
 						<div class="botaodefault material-shadow">
-							<div class="ganharbackground ">
-								<span class="fa fa-eye branco" aria-hidden="true"></span>
-								<h2 class="branco">
-									<b>Crer</b>
-								</h2>
+							<div class="discipularbackground ">
+								<span class="fa fa-heart-o branco" aria-hidden="true"></span>
+								<h3 class="branco">
+									<b>Sexualidade </br> Sadia</b>
+								</h3>
 								<button type="button" class="btn btn-invisible btn-lg"
-									data-toggle="modal" data-target="#modalCelulas">Saiba
+									data-toggle="modal" data-target="#modalCursos" id="btnModalSexualidade">Saiba
 									mais</button>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 ">
+				<div class="col-md-3 ">
 					<div class=" feature">
 						<div class="botaodefault material-shadow">
-							<div class="consolidarbackground ">
-								<span class="fa fa-shield branco" aria-hidden="true"></span>
-								<h2 class="branco">
-									<b>Forte</b>
-								</h2>
+							<div class="discipularbackground ">
+								<span class="fa fa-medkit branco" aria-hidden="true"></span>
+								<h3 class="branco">
+									<b>Libertação e Cura da Alma</b>
+								</h3>
 								<button type="button" class="btn btn-invisible btn-lg"
-									data-toggle="modal" data-target="#modalCelulas">Saiba
+									data-toggle="modal" data-target="#modalCursos" id="btnModalLibertacao">Saiba
+									mais</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 ">
+					<div class=" feature">
+						<div class="botaodefault material-shadow">
+							<div class="discipularbackground ">
+								<span class="fa fa-eye branco" aria-hidden="true"></span>
+								<h3 class="branco">
+									<b>Revelando o Livro de Apocalipse</b>
+								</h3>
+								<button type="button" class="btn btn-invisible btn-lg"
+									data-toggle="modal" data-target="#modalCursos" id="btnModalApocalipse">Saiba
+									mais</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 ">
+					<div class=" feature">
+						<div class="botaodefault material-shadow">
+							<div class="discipularbackground ">
+								<span class="fa fa-users branco" aria-hidden="true"></span>
+								<h3 class="branco">
+									<b>Família de </br> Deus</b>
+								</h3>
+								<button type="button" class="btn btn-invisible btn-lg"
+									data-toggle="modal" data-target="#modalCursos" id="btnModalFamilia">Saiba
 									mais</button>
 							</div>
 						</div>
@@ -161,6 +225,8 @@
 				</div>
 			</div>
 		</div>
+		</br></br>
+	</section>
 		<!-- Modal Cursos-->
 		<div class="modal fade" id="modalCursos" tabindex="-1" role="dialog"
 					aria-labelledby="myModalHeader">
@@ -174,11 +240,10 @@
 						<h3 class="modal-title" id="myModalHeader">Células</h3>
 					</div>
 					<div class="modal-body">
-						<h4><b>Nome do Curso:</b><i id="myModalNomeCurso">...</i></h4>
-						<h4><b>Requisitos:</b><i id="myModalNomeCurso">...</i></h4>
-						<h4><b>Carga Horária:</b><i id="myModalNomeCurso">...</i></h4>
-						<h4><b>Resumo:</b><i id="myModalNomeCurso">...</i></h4>
-						
+						<h4><b>Nome do Curso:</b> <span id="myModalNomeCurso">...</span></h4>
+						<h4><b>Carga Horária:</b> <span id="myModalCargaCurso">...</span></h4>
+						<h4><b>Requisitos:</b></br>  <span id="myModalReqCurso">...</span></h4>
+						<h4><b>Resumo:</b></br> <span id="myModalResCurso">...</span></h4>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
@@ -259,20 +324,64 @@
 		// Get the button that opens the modal
 		var btnModalDevEspiritual = document.getElementById("btnModalDevEspiritual");
 		var btnModalLideranca = document.getElementById("btnModalLideranca");
+		var btnModalNovaVida = document.getElementById("btnModalNovaVida");
+		var btnModalSexualidade = document.getElementById("btnModalSexualidade");
+		var btnModalLibertacao = document.getElementById("btnModalLibertacao");
+		var btnModalFamilia = document.getElementById("btnModalFamilia");
+		var btnModalApocalipse = document.getElementById("btnModalApocalipse");
+		
 		// Seta os valores nas modais conforme clicado 
 		//document.getElementById("myModalHeader").innerHTML = cursos[0].nomeCurso;
 		btnModalDevEspiritual.onclick = function() {
 			document.getElementById("myModalHeader").innerHTML = cursos[0].nomeCurso;
-			//document.getElementById("modalTextBody").innerHTML = cursos[0].lastName;
-			//document.getElementById("modalFooter").innerHTML = cursos[0].age;
-			//modal.style.display = "block";
+			document.getElementById("myModalNomeCurso").innerHTML = cursos[0].nomeCurso;
+			document.getElementById("myModalReqCurso").innerHTML = cursos[0].desRequisitos;
+			document.getElementById("myModalCargaCurso").innerHTML = cursos[0].desCargaHoraria;
+			document.getElementById("myModalResCurso").innerHTML = cursos[0].desResumo;
 		}
 		btnModalLideranca.onclick = function() {
 			document.getElementById("myModalHeader").innerHTML = cursos[1].nomeCurso;
-			//document.getElementById("modalTextBody").innerHTML = cursos[0].lastName;
-			//document.getElementById("modalFooter").innerHTML = cursos[0].age;
-			//modal.style.display = "block";
+			document.getElementById("myModalNomeCurso").innerHTML = cursos[1].nomeCurso;
+			document.getElementById("myModalReqCurso").innerHTML = cursos[1].desRequisitos;
+			document.getElementById("myModalCargaCurso").innerHTML = cursos[1].desCargaHoraria;
+			document.getElementById("myModalResCurso").innerHTML = cursos[1].desResumo;
 		}
+		btnModalNovaVida.onclick = function() {
+			document.getElementById("myModalHeader").innerHTML = cursos[2].nomeCurso;
+			document.getElementById("myModalNomeCurso").innerHTML = cursos[2].nomeCurso;
+			document.getElementById("myModalReqCurso").innerHTML = cursos[2].desRequisitos;
+			document.getElementById("myModalCargaCurso").innerHTML = cursos[2].desCargaHoraria;
+			document.getElementById("myModalResCurso").innerHTML = cursos[2].desResumo;
+		}
+		btnModalSexualidade.onclick = function() {
+			document.getElementById("myModalHeader").innerHTML = cursos[3].nomeCurso;
+			document.getElementById("myModalNomeCurso").innerHTML = cursos[3].nomeCurso;
+			document.getElementById("myModalReqCurso").innerHTML = cursos[3].desRequisitos;
+			document.getElementById("myModalCargaCurso").innerHTML = cursos[3].desCargaHoraria;
+			document.getElementById("myModalResCurso").innerHTML = cursos[3].desResumo;
+		}
+		btnModalLibertacao.onclick = function() {
+			document.getElementById("myModalHeader").innerHTML = cursos[4].nomeCurso;
+			document.getElementById("myModalNomeCurso").innerHTML = cursos[4].nomeCurso;
+			document.getElementById("myModalReqCurso").innerHTML = cursos[4].desRequisitos;
+			document.getElementById("myModalCargaCurso").innerHTML = cursos[4].desCargaHoraria;
+			document.getElementById("myModalResCurso").innerHTML = cursos[4].desResumo;
+		}
+		btnModalApocalipse.onclick = function() {
+			document.getElementById("myModalHeader").innerHTML = cursos[5].nomeCurso;
+			document.getElementById("myModalNomeCurso").innerHTML = cursos[5].nomeCurso;
+			document.getElementById("myModalReqCurso").innerHTML = cursos[5].desRequisitos;
+			document.getElementById("myModalCargaCurso").innerHTML = cursos[5].desCargaHoraria;
+			document.getElementById("myModalResCurso").innerHTML = cursos[5].desResumo;
+		}
+		btnModalFamilia.onclick = function() {
+			document.getElementById("myModalHeader").innerHTML = cursos[6].nomeCurso;
+			document.getElementById("myModalNomeCurso").innerHTML = cursos[6].nomeCurso;
+			document.getElementById("myModalReqCurso").innerHTML = cursos[6].desRequisitos;
+			document.getElementById("myModalCargaCurso").innerHTML = cursos[6].desCargaHoraria;
+			document.getElementById("myModalResCurso").innerHTML = cursos[6].desResumo;
+		}
+			
 	</script>
 </body>
 </html>
